@@ -14,7 +14,7 @@ tickerSymbol = 'GOOGL'
 #get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
 #get the historical prices for this ticker
-tickerDf = tickerData.history(period='1d', start='2015-2-20', end='2025-2-20')
+tickerDf = tickerData.history(period='1d', start='2010-2-20', end='2020-2-20')
 # Open	High	Low	Close	Volume	Dividends	Stock Splits
 
 st.line_chart(tickerDf.Close)
